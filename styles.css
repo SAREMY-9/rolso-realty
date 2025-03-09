@@ -8,29 +8,54 @@ body {
 
 
 .header {
-    background: url('images/Modern Elegance Meets Historic Charm_ Experience Timeless Style in a NOVASPACE Passive House (1).jpeg') no-repeat center center;
+    min-height: 70vh;
+    background: url('images/9d50a12b-ae3d-4938-98cd-646a76e57265.jpeg') no-repeat center center;
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Keeps the background steady */
-    color: white;
-    padding: 0;
+    color: rgb(0, 0, 0);
+    padding: 10;
     width: 100%;
 }
 
 .navbar {
-    background: rgba(30, 58, 138, 0.8); /* Adds slight transparency to navbar */
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(2, 32, 116, 0.8); /* Slight transparency */
+    color: white;
     padding: 15px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    z-index: 1000;
+    margin-bottom:20px; 
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 100px 20px;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/BSB House Designs Gallery (1).jpeg') no-repeat center center/cover;
+    opacity: 0.3; /* Lower opacity of the background image */
+    z-index: -1;
 }
 
 
 
-.navbar, .hero {
-    background: transparent;
-}
+
 
 .logo {
     font-size: 24px;
@@ -44,7 +69,7 @@ body {
 }
 
 .nav-links a {
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -59,16 +84,6 @@ body {
     cursor: pointer;
 }
 
-
-.hero {
-    min-height: 80vh; /* Ensures the hero section has enough height */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-}
 
 .hero h1 {
     font-size: 48px;
@@ -97,7 +112,7 @@ body {
 }
 
 .search-box button {
-    background-color: #F59E0B;
+    background-color: #000cb9;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -111,34 +126,143 @@ body {
     background-color: #D97706;
 }
 
+
 .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     padding: 40px;
     justify-content: center;
+    align-items: center;
+    max-width: 1200px; /* Adjust width as needed */
+    margin: 0 auto; /* Centers the container */
+    text-align: center; /* Ensures text inside is centered */
 }
 
-.property-card {
+
+
+
+.call2Action {
+    min-height: 5vh; /* Ensures the call2Action section has enough height */
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    padding: 10px;
+}
+
+
+.call2Action h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1E3A8A;
+    margin-bottom: 20px;
+}
+
+/* Steps section */
+.steps {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.step {
     background: white;
     border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s;
+    padding: 30px;
     text-align: center;
+    width: 300px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    position: relative;
 }
 
-.property-card:hover {
-    transform: scale(1.05);
+.step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
 }
 
-.property-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto;
+/* Icons */
+.icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 15px;
+    background: #E5E7EB;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.icon img {
+    width: 50px;
+    height: auto;
+}
+
+/* Headings & Text */
+.step h4 {
+    color: #1E3A8A;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.step p {
+    color: #555;
+    font-size: 16px;
+}
+
+
+
+.call2Action h4 {
+    font-size: 28px;
+    font-weight: lighter;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.call2Action p {
+    font-size: 20px;
+    max-width: 600px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.row {
+    min-height: 5vh; /* Ensures the call2Action section has enough height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+.property-card {
+        border-radius: 10px;
+        overflow: hidden;
+        background: #fff;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        padding: 15px;
+        transition: transform 0.3s;
+    }
+    .property-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    .property-card:hover {
+        transform: scale(1.05);
+    }
+
 
 .property-info {
     padding: 15px;
@@ -176,12 +300,65 @@ body {
     background-color: #142C6E;
 }
 
+
+
+.services {
+    min-height: 70vh;
+    background: url('images/modern.jpeg.jpeg') no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Keeps the background steady */
+    color: rgb(0, 0, 0);
+    padding: 10;
+    width: 100%;
+}
+
+
+
 .footer {
-    background-color: #1E3A8A;
+    background: #1E3A8A;
     color: white;
+    padding: 40px 20px;
     text-align: center;
-    padding: 20px;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+.contact-info, .quick-links, .social-media {
+    flex: 1;
+    min-width: 250px;
+}
+.quick-links ul {
+    list-style: none;
+    padding: 0;
+}
+.quick-links ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+}
+.quick-links ul li a:hover {
+    text-decoration: underline;
+}
+.social-media a {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+.social-media a:hover {
+    color: #FFD700;
+}
+.copyright {
     margin-top: 20px;
+    font-size: 14px;
+    opacity: 0.8;
 }
 
 
@@ -189,11 +366,26 @@ body {
     display: none;
     font-size: 24px;
     cursor: pointer;
-    color: white;
+    color: rgb(255, 255, 255);
     background: none;
     border: none;
     outline: none;
 }
+
+
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 @media screen and (max-width: 768px) {
     .nav-links {
@@ -228,4 +420,24 @@ body {
         padding: 10px 20px;
     }
 
+    .steps-carousel {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 10px;
+        padding: 20px;
+        scroll-behavior: smooth;
+    }
+
+
+    .steps {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .step {
+        width: 90%;
+    }
 }
+
+
