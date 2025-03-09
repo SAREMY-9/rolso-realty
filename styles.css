@@ -308,9 +308,132 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Keeps the background steady */
-    color: rgb(0, 0, 0);
-    padding: 10;
+    color: white;
+    padding: 60px 20px; /* Proper padding */
     width: 100%;
+    position: relative;
+}
+
+/* Overlay to improve readability */
+.services::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+}
+
+.services .row {
+    position: relative;
+    z-index: 2;
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.offers {
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    max-width: 800px;
+}
+
+.offers:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.offers h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.offers i {
+    font-size: 1rem;
+    font-style: normal;
+    color: #555;
+}
+
+
+.tips {
+    min-height: 80vh;
+    background: url('images/modern.jpeg') no-repeat center center;
+    background-size: cover;
+    color: black;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.tips .row {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.tips h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #2c3e50; /* Consistent dark text */
+}
+
+/* Grid layout for proper alignment */
+.tips .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Individual Tips */
+.tip-1 {
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover Effects */
+.tip-1:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.tip-1 h2 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: #333;
+    position: relative;
+    font-weight: bold;
+}
+
+.tip-1 i {
+    font-size: 1rem;
+    font-style: normal;
+    color: #555;
+    position: relative;
 }
 
 
@@ -437,6 +560,31 @@ body {
 
     .step {
         width: 90%;
+    }
+
+     .offers {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .services h2 {
+        font-size: 1.5rem;
+    }
+
+    .offers h2 {
+        font-size: 1.5rem;
+    }
+
+    .tips h1 {
+        font-size: 2rem;
+    }
+
+    .tips .row {
+        display: block;
+    }
+
+    .tip-1 {
+        margin-bottom: 20px;
     }
 }
 
