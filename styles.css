@@ -507,7 +507,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 90%;
+        width: 100%;
         max-width: 500px;
         z-index: 1000;
     }
@@ -616,5 +616,6 @@ body {
         margin-bottom: 20px;
     }
 }
+
 
 
