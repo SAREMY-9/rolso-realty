@@ -19,3 +19,33 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    const banner = document.getElementById("cookie-banner");
+    const acceptBtn = document.getElementById("accept-cookies");
+    const denyBtn = document.getElementById("deny-cookies");
+
+    // Check if user already made a choice
+    if (localStorage.getItem("cookieConsent")) {
+        banner.style.display = "none";
+    }
+
+    // Accept Cookies
+    acceptBtn.addEventListener("click", function () {
+        localStorage.setItem("cookieConsent", "accepted");
+        gtag('consent', 'update', {
+            'ad_storage': 'granted',
+            'analytics_storage': 'granted'
+        });
+        banner.style.display = "none";
+    });
+
+    // Deny Cookies
+    denyBtn.addEventListener("click", function () {
+        localStorage.setItem("cookieConsent", "denied");
+        gtag('consent', 'update', {
+            'ad_storage': 'denied',
+            'analytics_storage': 'denied'
+        });
+        banner.style.display = "none";
+    });
+});
