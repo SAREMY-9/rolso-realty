@@ -1,0 +1,30 @@
+.services {
+    min-height: 70vh;
+    background: url('images/modern.jpeg.jpeg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .offers {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+    color: #ffcc00;
+  }
+  

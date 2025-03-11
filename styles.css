@@ -301,7 +301,6 @@ body {
 }
 
 
-
 .services {
     min-height: 70vh;
     background: url('images/modern.jpeg.jpeg') no-repeat center center;
@@ -373,7 +372,6 @@ body {
 
 .tips {
     min-height: 80vh;
-    background: url('images/modern.jpeg') no-repeat center center;
     background-size: cover;
     color: black;
     padding: 60px 20px;
