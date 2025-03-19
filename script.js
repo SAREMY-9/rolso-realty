@@ -118,3 +118,6 @@ function viewPropertyDetails(button) {
                 amenitiesList.appendChild(li);
             });
         };
+
+
+          

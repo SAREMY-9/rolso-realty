@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  
 
     
     <script>
@@ -35,6 +37,22 @@
 </head>
 
 <body>
+
+
+    <style>
+            .swiper-button-next,
+              .swiper-button-prev {
+              color: #c25106 !important; /* Force apply */
+          }
+
+              .swiper-pagination .swiper-pagination-bullet {
+              background-color: #c25106 !important;
+          }
+
+            .swiper-pagination .swiper-pagination-bullet-active {
+          background-color: #c25106 !important;
+        }
+    </style>
 
     <!-- Cookie Consent Banner -->
     <div id="cookie-banner" class="cookie-banner">
@@ -95,43 +113,78 @@
 
     <!-- Property Listings -->
 
-    <div class="container">
-
+     <div class="container">
         <div class="property-card" data-location="Nairobi, Kenya" data-price="68000000" data-amenities="Four Bedrooms">
-        <img src="images/Rivers Minimalist Villa, Port Harcourt _ Designed by EA AARch.jpeg" alt="Property">
+            <div class="swiper property-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/House 1/WhatsApp Image 2025-03-14 at 14.24.58.jpeg" alt="Property"></div>
+                <div class="swiper-slide"><img src="images/House 1/WhatsApp Image 2025-03-14 at 14.24.58 (2).jpeg" alt="Property"></div>
+                <div class="swiper-slide"><img src="images/House 1/WhatsApp Image 2025-03-14 at 14.24.58 (2).jpeg" alt="Property"></div>
+                <div class="swiper-slide"><img src="images/House 1/WhatsApp Image 2025-03-14 at 14.25.00 (2).jpeg" alt="Property"></div>
+                <div class="swiper-slide"><img src="images/House 1/WhatsApp Image 2025-03-14 at 14.24.59 (2).jpeg" alt="Property"></div>
+                <div class="swiper-slide"><img src="images/House 1/WhatsApp Image 2025-03-14 at 14.25.01.jpeg" alt="Property"></div>
+                <div class="swiper-slide"><img src="images/House 1/WhatsApp Image 2025-03-14 at 14.24.59 (2).jpeg" alt="Property"></div>
+            
+            </div>
+            <div class="swiper-button-next" ></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
         <div class="property-info">
-            <h3>Modern 4 Bedroom Villa</h3>
+            <h3>Modern 4 Bedroom Villas</h3>
             <p class="location">Lavington, Nairobi</p>
             <p class="price">KSH 68M</p>
             <button onclick="viewPropertyDetails(this)">View Details</button>
         </div>
         </div>
-        
 
-
-        <div class="property-card" data-location="Nairobi, Kenya" data-price="60000000" data-amenities="Swimming pool, 
-         Club house, Gym, Private garden, Solar system">
-             <img src="images/9d50a12b-ae3d-4938-98cd-646a76e57265.jpeg" alt="Property">
-               <div class="property-info">
-                <h3>Luxurious 4 Bedroom all en-suite Townhouse</h3>
-                <p class="location">Lavington, Nairobi</p> 
-                 <p class="price">KSH 60M</p> 
-               <button onclick="viewPropertyDetails(this)">View Details</button>
+        <div class="property-card" data-location="Nairobi, Kenya" data-price="60000000" data-amenities="Swimming pool, Club house, Gym, Private garden, Solar system">
+            <div class="swiper property-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/house 2/WhatsApp Image 2025-03-14 at 14.26.06.jpeg" alt="Property"></div>
+                <div class="swiper-slide"><img src="images/house 2/WhatsApp Image 2025-03-14 at 14.26.08 (1).jpeg" alt="Property"></div>
+                <div class="swiper-slide"><img src="images/house 2/WhatsApp Image 2025-03-14 at 14.26.08.jpeg" alt="Property"></div>
+                 <div class="swiper-slide"><img src="images/house 2/WhatsApp Image 2025-03-14 at 14.26.06 (1).jpeg" alt="Property"></div>
+                  <div class="swiper-slide"><img src="images/house 2/WhatsApp Image 2025-03-14 at 14.26.11.jpeg" alt="Property"></div>
+                   <div class="swiper-slide"><img src="images/house 2/WhatsApp Image 2025-03-14 at 14.26.10 (2).jpeg" alt="Property"></div>
+                   <div class="swiper-slide"><img src="images/house 2/WhatsApp Image 2025-03-14 at 14.26.08 (2).jpeg" alt="Property"></div>
+                   <div class="swiper-slide"><img src="images/house 2/WhatsApp Image 2025-03-14 at 14.26.07.jpeg" alt="Property"></div>
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="property-info">
+            <h3>Luxurious 4 Bedroom all en-suite Townhouse</h3>
+            <p class="location">Lavington, Nairobi</p>
+            <p class="price">KSH 60M</p>
+            <button onclick="viewPropertyDetails(this)">View Details</button>
+        </div>
         </div>
 
-       <div class="property-card" data-location="Nairobi, Kenya" data-price="85000000"  data-amenities="Four-Bedrooms, Staff quarters">
-        <img src="images/Estate Apartment.jpeg" alt="Property">
+        <div class="property-card" data-location="Nairobi, Kenya" data-price="85000000" data-amenities="Four-Bedrooms, Staff quarters">
+        <div class="swiper property-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/House 3/WhatsApp Unknown 2025-03-14 at 15.30.45/WhatsApp Image 2025-03-14 at 15.24.05 (2).jpeg" alt="Property"></div>
+                <div class="swiper-slide"><img src="images/House 3/WhatsApp Unknown 2025-03-14 at 15.30.45/WhatsApp Image 2025-03-14 at 15.24.01.jpeg" alt="Property"></div>
+                <div class="swiper-slide"><img src="images/House 3/WhatsApp Unknown 2025-03-14 at 15.30.45/WhatsApp Image 2025-03-14 at 15.24.03.jpeg" alt="Property"></div>
+                <div class="swiper-slide"><img src="images/House 3/WhatsApp Unknown 2025-03-14 at 15.30.45/WhatsApp Image 2025-03-14 at 15.24.05.jpeg" alt="Property"></div>
+                <div class="swiper-slide"><img src="images/House 3/WhatsApp Unknown 2025-03-14 at 15.30.45/WhatsApp Image 2025-03-14 at 15.24.02 (1).jpeg" alt="Property"></div>
+                <div class="swiper-slide"><img src="images/House 3/WhatsApp Unknown 2025-03-14 at 15.30.45/WhatsApp Image 2025-03-14 at 15.24.03.jpeg" alt="Property"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
         <div class="property-info">
             <h3>Opulence and Luxury 4 Bedroom Villa</h3>
             <p class="location">Lavington, off James Gichuru Rd</p>
             <p class="price">KSH 85M</p>
-            <button onclick="viewPropertyDetails(this)">View Details</button>           
+            <button onclick="viewPropertyDetails(this)">View Details</button>
         </div>
-      </div>
+        </div>
     </div>
-   
-  
+
 
         <div class="services">
           <div class="tips">
@@ -184,6 +237,8 @@
 
      </div>
 
+     
+
         
         <footer class="footer">
              <div class="container">
@@ -221,9 +276,21 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-QWTKZyjpPEjISXnKDTN1pI4hC4I9IoClZfIpLu6+/NjPcH/U2iXb/2MeC80lsZJm" crossorigin="anonymous"></script>
-
+        <!-- Include Swiper.js Script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js">
     </script>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        new Swiper(".property-slider", {
+            loop: true,
+            navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
+            pagination: { el: ".swiper-pagination", clickable: true },
+        });
+    });
+    </script>
+
 </body>
 </html>
