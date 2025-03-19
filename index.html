@@ -38,6 +38,22 @@
 
 <body>
 
+
+    <style>
+            .swiper-button-next,
+              .swiper-button-prev {
+              color: #c25106 !important; /* Force apply */
+          }
+
+              .swiper-pagination .swiper-pagination-bullet {
+              background-color: #c25106 !important;
+          }
+
+            .swiper-pagination .swiper-pagination-bullet-active {
+          background-color: #c25106 !important;
+        }
+    </style>
+
     <!-- Cookie Consent Banner -->
     <div id="cookie-banner" class="cookie-banner">
     <p>We use cookies to enhance your experience. By continuing, you accept our <a href="#">privacy policy</a>.</p>
@@ -64,13 +80,50 @@
    
     <!-- Hero Section -->
     <section class="hero">
+    <video autoplay muted loop class="hero-video">
+        <source src="images/Real estate video.mp4" type="video/mp4" speed="0.3x">
+        Your browser does not support the video tag.
+    </video>
+    
+    <div class="hero-content">
         <h1>Explore Best Properties in Town</h1>
-        <div class="search-box">
-            <input type="text" placeholder="Saremy bungalows............"> 
-            <button>Search</button>
-        </div>
-    </section>
+        <div class="container">
+        <div class="filters">
+        <select id="locationFilter"> 
+        <option value="">All Locations</option>
+        <option value="Nairobi, Kenya">Nairobi</option>
+        <option value="Mombasa, Kenya">Mombasa</option>
+        <option value="Diani, Kenya">Diani</option>
+        </select>
+        
+        <select id="priceFilter">
+        <option value="">Any Price</option>
+        <option value="60000000">Up to KSH 60Million</option>
+        <option value="70000000">Up to KSH 70Million</option>
+        <option value="90000000">Up to KSH 90Million</option> 
+        </select>
+
+        <select id="priceFilter">
+        <option value="">Search..........</option>
+        <option value="60000000">Up to KSH 60Million</option>
+        <option value="70000000">Up to KSH 70Million</option>
+        <option value="90000000">Up to KSH 90Million</option>
+        <option value="90000000">Up to KSH 150Million</option>
+        <option value="90000000">Up to KSH 450Million</option>
+        <option value="90000000">Up to KSH 900Million</option>
+        </select>
+        
     </div>
+    
+    </div>
+    
+    </div>
+    </section>
+
+
+    
+
+
     <div class="container">
        
             <section class="call2Action">
@@ -113,49 +166,78 @@
         </div>
     </div>    
 
+ <!-- Property Listings -->
 
-    <!-- Property Listings -->
-
-        <div class="container">
-         <section class="call2Action">
-        <h1>Featured Listings</h1>
-       </section>
-       </div>
-
-      <div class="container">
-        <div class="property-card">
-            <img src="images/Rivers Minimalist Villa, Port Harcourt _ Designed by EA AARch.jpeg" alt="Property">
-            <div class="property-info">
-                <h3>Luxury Apartment</h3>
-                <p class="location">Nairobi, Kenya</p>
-                <p class="price">$250,000</p>
-                <button>View Details</button>
+     <div class="container">
+        <div class="property-card" data-location="Nairobi, Kenya" data-price="68000000" data-amenities="Four Bedrooms">
+            <div class="swiper property-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/House 1/WhatsApp Image 2025-03-14 at 14.24.58.jpeg" alt="Property"></div>
+                <div class="swiper-slide"><img src="images/House 1/WhatsApp Image 2025-03-14 at 14.24.58 (2).jpeg" alt="Property"></div>
+                <div class="swiper-slide"><img src="images/House 1/WhatsApp Image 2025-03-14 at 14.24.58 (2).jpeg" alt="Property"></div>
+                <div class="swiper-slide"><img src="images/House 1/WhatsApp Image 2025-03-14 at 14.25.00 (2).jpeg" alt="Property"></div>
+                <div class="swiper-slide"><img src="images/House 1/WhatsApp Image 2025-03-14 at 14.24.59 (2).jpeg" alt="Property"></div>
+                <div class="swiper-slide"><img src="images/House 1/WhatsApp Image 2025-03-14 at 14.25.01.jpeg" alt="Property"></div>
+                <div class="swiper-slide"><img src="images/House 1/WhatsApp Image 2025-03-14 at 14.24.59 (2).jpeg" alt="Property"></div>
+            
             </div>
+            <div class="swiper-button-next" ></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="property-info">
+            <h3>Modern 4 Bedroom Villas</h3>
+            <p class="location">Lavington, Nairobi</p>
+            <p class="price">KSH 68M</p>
+            <button onclick="viewPropertyDetails(this)">View Details</button>
+        </div>
         </div>
 
-
-        <div class="property-card">
-            <img src="images/9d50a12b-ae3d-4938-98cd-646a76e57265.jpeg" alt="Property">
-            <div class="property-info">
-                <h3>Modern Villa</h3>
-                <p class="location">Mombasa, Kenya</p>
-                <p class="price">$500,000</p>
-                <button>View Details</button>
+        <div class="property-card" data-location="Nairobi, Kenya" data-price="60000000" data-amenities="Swimming pool, Club house, Gym, Private garden, Solar system">
+            <div class="swiper property-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/house 2/WhatsApp Image 2025-03-14 at 14.26.06.jpeg" alt="Property"></div>
+                <div class="swiper-slide"><img src="images/house 2/WhatsApp Image 2025-03-14 at 14.26.08 (1).jpeg" alt="Property"></div>
+                <div class="swiper-slide"><img src="images/house 2/WhatsApp Image 2025-03-14 at 14.26.08.jpeg" alt="Property"></div>
+                 <div class="swiper-slide"><img src="images/house 2/WhatsApp Image 2025-03-14 at 14.26.06 (1).jpeg" alt="Property"></div>
+                  <div class="swiper-slide"><img src="images/house 2/WhatsApp Image 2025-03-14 at 14.26.11.jpeg" alt="Property"></div>
+                   <div class="swiper-slide"><img src="images/house 2/WhatsApp Image 2025-03-14 at 14.26.10 (2).jpeg" alt="Property"></div>
+                   <div class="swiper-slide"><img src="images/house 2/WhatsApp Image 2025-03-14 at 14.26.08 (2).jpeg" alt="Property"></div>
+                   <div class="swiper-slide"><img src="images/house 2/WhatsApp Image 2025-03-14 at 14.26.07.jpeg" alt="Property"></div>
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="property-info">
+            <h3>Luxurious 4 Bedroom all en-suite Townhouse</h3>
+            <p class="location">Lavington, Nairobi</p>
+            <p class="price">KSH 60M</p>
+            <button onclick="viewPropertyDetails(this)">View Details</button>
+        </div>
         </div>
 
-
-        <div class="property-card">
-            <img src="images/Estate Apartment.jpeg" alt="Property">
-            <div class="property-info">
-                <h3>Beach House</h3>
-                <p class="location">Diani, Kenya</p>
-                <p class="price">$750,000</p>
-                <button>View Details</button>
+        <div class="property-card" data-location="Nairobi, Kenya" data-price="85000000" data-amenities="Four-Bedrooms, Staff quarters">
+        <div class="swiper property-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/House 3/WhatsApp Unknown 2025-03-14 at 15.30.45/WhatsApp Image 2025-03-14 at 15.24.05 (2).jpeg" alt="Property"></div>
+                <div class="swiper-slide"><img src="images/House 3/WhatsApp Unknown 2025-03-14 at 15.30.45/WhatsApp Image 2025-03-14 at 15.24.01.jpeg" alt="Property"></div>
+                <div class="swiper-slide"><img src="images/House 3/WhatsApp Unknown 2025-03-14 at 15.30.45/WhatsApp Image 2025-03-14 at 15.24.03.jpeg" alt="Property"></div>
+                <div class="swiper-slide"><img src="images/House 3/WhatsApp Unknown 2025-03-14 at 15.30.45/WhatsApp Image 2025-03-14 at 15.24.05.jpeg" alt="Property"></div>
+                <div class="swiper-slide"><img src="images/House 3/WhatsApp Unknown 2025-03-14 at 15.30.45/WhatsApp Image 2025-03-14 at 15.24.02 (1).jpeg" alt="Property"></div>
+                <div class="swiper-slide"><img src="images/House 3/WhatsApp Unknown 2025-03-14 at 15.30.45/WhatsApp Image 2025-03-14 at 15.24.03.jpeg" alt="Property"></div>
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
         </div>
-
-        
+        <div class="property-info">
+            <h3>Opulence and Luxury 4 Bedroom Villa</h3>
+            <p class="location">Lavington, off James Gichuru Rd</p>
+            <p class="price">KSH 85M</p>
+            <button onclick="viewPropertyDetails(this)">View Details</button>
+        </div>
+        </div>
     </div>
 
 
@@ -464,11 +546,24 @@
               </div>
              </div>
 
-                   <p class="copyright">&copy; 2025 Rolso Realty. All Rights Reserved.</p>
+                   <p class="copyright">&copy; 2025 Rolso Realty. All Rights Reserved.Powered By Tuposite Enterprises Inc.</p>
                   </div>
             </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-QWTKZyjpPEjISXnKDTN1pI4hC4I9IoClZfIpLu6+/NjPcH/U2iXb/2MeC80lsZJm" crossorigin="anonymous"></script>
+
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  
+     <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        new Swiper(".property-slider", {
+            loop: true,
+            navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
+            pagination: { el: ".swiper-pagination", clickable: true },
+        });
+    });
+
+    </script>
 
     <script src="script.js">
 

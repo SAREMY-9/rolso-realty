@@ -62,15 +62,49 @@
 
 
 
+ 
     <!-- Hero Section -->
     <section class="hero">
+    <video autoplay muted loop class="hero-video">
+        <source src="images/Real estate video.mp4" type="video/mp4" speed="0.3x">
+        Your browser does not support the video tag.
+    </video>
+    
+    <div class="hero-content">
         <h1>Explore Best Properties in Town</h1>
-        <div class="search-box">
-            <input type="text" placeholder="Saremy bungalows............"> 
-            <button>Search</button>
-        </div>
-    </section>
+        <div class="container">
+        <div class="filters">
+        <select id="locationFilter"> 
+        <option value="">All Locations</option>
+        <option value="Nairobi, Kenya">Nairobi</option>
+        <option value="Mombasa, Kenya">Mombasa</option>
+        <option value="Diani, Kenya">Diani</option>
+        </select>
+        
+        <select id="priceFilter">
+        <option value="">Any Price</option>
+        <option value="60000000">Up to KSH 60Million</option>
+        <option value="70000000">Up to KSH 70Million</option>
+        <option value="90000000">Up to KSH 90Million</option> 
+        </select>
+
+        <select id="priceFilter">
+        <option value="">Search..........</option>
+        <option value="60000000">Up to KSH 60Million</option>
+        <option value="70000000">Up to KSH 70Million</option>
+        <option value="90000000">Up to KSH 90Million</option>
+        <option value="90000000">Up to KSH 150Million</option>
+        <option value="90000000">Up to KSH 450Million</option>
+        <option value="90000000">Up to KSH 900Million</option>
+        </select>
+        
     </div>
+    
+    </div>
+    
+    </div>
+    </section>
+
 
 
     <!-- Property Listings -->

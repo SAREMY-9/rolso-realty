@@ -7,16 +7,7 @@ body {
 }
 
 
-.header {
-    min-height: 70vh;
-    background: url('images/9d50a12b-ae3d-4938-98cd-646a76e57265.jpeg') no-repeat center center;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; /* Keeps the background steady */
-    color: rgb(0, 0, 0);
-    padding: 10;
-    width: 100%;
-}
+
 
 .navbar {
     position: sticky;
@@ -36,21 +27,33 @@ body {
 
 .hero {
     position: relative;
-    text-align: center;
-    color: white;
-    padding: 100px 20px;
+    width: 100%;
+    min-height: 70vh;
+    overflow: hidden; /* Prevents scrolling */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.hero::before {
-    content: "";
+.hero-video {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 100%;
     height: 100%;
-    background: url('images/Estate Apartment.jpeg') no-repeat center center/cover;
-    opacity: 0.3; /* Lower opacity of the background image */
+    object-fit: cover; /* Ensures the video covers the entire section */
     z-index: -1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white; /* Ensure text is visible */
+/*    background: rgba(129, 129, 129, 0.5); /* Optional dark overlay */
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .logo {
@@ -616,6 +619,32 @@ select:hover, select:focus {
 .swiper-button-prev {
     color: #ff0000; /* Change to your preferred color */
 }
+
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: rgb(230, 241, 255); /* White background */
+    color: #000 !important; /* Black text for best visibility */
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+}
+
+select:focus {
+    background-color: #e0f0ff; /* Light blue on focus */
+   
+}
+
+option {
+    background-color: white;
+    color: #000 !important; /* Force black text */
+}
+
+
+
+
 /* Animations */
 @keyframes fadeIn {
     from {
