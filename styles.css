@@ -48,14 +48,10 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('images/BSB House Designs Gallery (1).jpeg') no-repeat center center/cover;
+    background: url('images/Estate Apartment.jpeg') no-repeat center center/cover;
     opacity: 0.3; /* Lower opacity of the background image */
     z-index: -1;
 }
-
-
-
-
 
 .logo {
     font-size: 24px;
@@ -97,8 +93,6 @@ body {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-
-
 .search-box {
     margin-top: 20px;
 }
@@ -127,7 +121,10 @@ body {
 }
 
 
+
+
 .container {
+   /* flex-wrap: wrap; /* Ensures items wrap properly */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
@@ -139,9 +136,6 @@ body {
     text-align: center; /* Ensures text inside is centered */
 }
 
-
-
-
 .call2Action {
     min-height: 5vh; /* Ensures the call2Action section has enough height */
     display: flex;
@@ -151,7 +145,6 @@ body {
     text-align: left;
     padding: 5px;
 }
-
 
 .call2Action h1 {
     text-align: center;
@@ -229,8 +222,6 @@ body {
     max-width: 600px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
-
-
 
 .row {
     min-height: 5vh; /* Ensures the call2Action section has enough height */
@@ -524,6 +515,85 @@ body {
         background: #0056b3;
     }
 
+/*Listings*/
+
+ .filters {
+            display: flex;
+            gap: 12px;
+            background: white;
+            padding: 12px;
+            border-radius: 8px;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+            overflow-x: auto;
+        }
+
+        select {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        select:hover {
+            border-color: #007bff;
+        }
+
+        .results {
+            margin-top: 15px;
+            padding: 10px;
+            background: white;
+            border-radius: 6px;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        select {
+    padding: 8px;
+    border: none; /* No border at all */
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    background: white; /* Clean white background */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none; /* Removes focus border */
+}
+
+select:hover, select:focus {
+    background: #f8f8f8; /* Subtle hover effect */
+}
+
+
+.property-card {
+    width: calc(33.33% - 20px); /* Adjust for 3 columns */
+    min-width: 300px; /* Prevents shrinking too much */
+    max-width: 400px; /* Controls width */
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.property-details {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.property-details img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.property-details p {
+    font-size: 18px;
+    margin: 10px 0;
+}
 
 
 /* Animations */
@@ -614,6 +684,10 @@ body {
 
     .tip-1 {
         margin-bottom: 20px;
+    }
+
+     .property-card {
+        width: 100%; /* Stack items for smaller screens */
     }
 }
 
