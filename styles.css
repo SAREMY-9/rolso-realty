@@ -7,6 +7,21 @@ body {
 }
 
 
+.top-bar{
+
+    padding:10px; 
+    text-align:center;  
+}
+
+.top-bar a {
+    color: black;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+.top-bar a:hover {
+    color: #0004ff;
+}
 
 
 .navbar {
@@ -22,7 +37,7 @@ body {
     align-items: center;
     flex-wrap: wrap;
     z-index: 1000;
-    margin-bottom:20px; 
+    margin-bottom:10px; 
 }
 
 .hero {
