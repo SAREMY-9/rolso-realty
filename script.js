@@ -119,3 +119,4 @@ function viewPropertyDetails(button) {
             });
         };
 
+        

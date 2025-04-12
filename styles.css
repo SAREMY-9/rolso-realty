@@ -138,15 +138,12 @@ body {
     background-color: #D97706;
 }
 
-
-
-
 .container {
    /* flex-wrap: wrap; /* Ensures items wrap properly */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-    padding: 40px;
+    padding: 10px;
     justify-content: center;
     align-items: center;
     max-width: 1200px; /* Adjust width as needed */
@@ -155,7 +152,7 @@ body {
 }
 
 .call2Action {
-    min-height: 5vh; /* Ensures the call2Action section has enough height */
+    min-height: 5vh; /* Ensures the call2Action section has enough height */ 
     display: flex;
     flex-direction: column;
     justify-content: left;
@@ -169,7 +166,7 @@ body {
     font-size: 2.5rem;
     font-weight: bold;
     color: #1E3A8A;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 /* Steps section */
@@ -385,7 +382,7 @@ body {
     background: url('images/modern.jpeg') no-repeat center center;
     background-size: cover;
     color: black;
-    padding: 60px 20px;
+    padding: 20px 10px;
     text-align: center;
 }
 
@@ -415,7 +412,7 @@ body {
 .tip-1 {
     background: rgba(255, 255, 255, 0.9);
     color: black;
-    padding: 20px;
+    padding: 10px; 
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
